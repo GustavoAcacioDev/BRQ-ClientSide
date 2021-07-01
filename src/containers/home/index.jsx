@@ -12,7 +12,7 @@ import Fusca from './../../img/Fusca.png';
 import Gustavo from './../../img/Gustavo.png';
 import Henrique from './../../img/Henrique.png';
 import Eduardo from './../../img/Eduardo.png';
-import banner2 from './../../img/Banner2.png'
+import banner2 from './../../img/Banner2.jpg';
 
 import 'reactjs-popup/dist/index.css';
 import Libras from '././../../components/acessibilidade';
@@ -33,12 +33,13 @@ const home = () => {
 
       <div>
         <div style={{ color: '#fffff' }}>
-          <div id="home">
-            <div id="Home">
               <Menu />
-              <img style={{ width: '100%' }} src={Banner} />
-              <div className="textoHome">
-
+          <div id="home">
+            <div id="Home" style={{  display: 'flex', justifyContent: 'center'}}>
+              <img style={{ width: '100%', }} src={Banner} />
+              <div style={{ height: '40px', position: 'absolute'}} className="textoHome">
+                <p style={{ fontSize: '80px', fontWeight: 'bold', color: 'white', margin: 'auto', marginRight: '620px', marginTop: '230px'}}>Seja bem vindo! </p>
+                <p style={{ fontSize: '40px', color: 'white', margin: 'auto', }}>Ao melhor atendimento do Brasil </p>
               </div>
             </div>
           </div>
@@ -150,11 +151,6 @@ const home = () => {
         </div>
       </div>
     </div>
-
-
-
-
-
   )
 }
 

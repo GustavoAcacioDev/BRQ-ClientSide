@@ -32,8 +32,8 @@ export const signInCliente = (user) => {
                     .get()
                     .then((doc) => {
                         const loggedInUser = {
-                            // nome: doc.data().nome,
-                            // cpf: doc.data().cpf,
+                            nome: doc.data().nome,
+                            cpf: doc.data().cpf,
                             email: user.emailLogin
                         }
 
